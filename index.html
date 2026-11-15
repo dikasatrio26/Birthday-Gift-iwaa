@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8c8d5">
+  <title>Untuk Salwa Safitri ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true" id="floatingLayer"></div>
+
+  <main class="page">
+    <section class="hero card">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <div class="hero-flower" aria-hidden="true">🌷</div>
+      <h1>Happy Birthday,<br><span>Salwa Safitri</span></h1>
+      <p class="intro">Ada sesuatu kecil yang ingin aku sampaikan di hari spesialmu.</p>
+      <button class="primary-btn" id="startBtn">Buka hadiah kecil ini <span>♡</span></button>
+      <p class="hint">Dibuat dengan doa baik dan kenangan yang hangat.</p>
+    </section>
+
+    <section class="letter card hidden" id="letterSection">
+      <p class="eyebrow">A LETTER FOR YOU</p>
+      <div class="envelope-icon">💌</div>
+      <h2>Untuk Iwa</h2>
+      <div class="letter-text">
+        <p>Selamat bertambah usia, Iwa.</p>
+        <p>Mungkin sekarang aku bukan lagi orang yang bisa merayakan hari spesial kamu secara langsung, tapi doa baikku tetap sama. Semoga kamu selalu sehat, bahagia, dan mendapatkan semua hal yang selama ini kamu impikan.</p>
+        <p>Terima kasih untuk segala kenangan yang pernah kita ciptakan. Ada beberapa hal yang memang cukup dikenang, bukan untuk diulang.</p>
+        <p>Jaga diri baik-baik dan jangan pernah lupa sama larangan dan nasehat yang udah aku kasih tau yaa.</p>
+        <p class="signoff">Semoga hal-hal baik selalu menemukanmu. <span>♡</span></p>
+      </div>
+    </section>
+
+    <section class="gift card hidden" id="giftSection">
+      <p class="eyebrow">A SMALL SURPRISE</p>
+      <h2>Ada hadiah untukmu 🎁</h2>
+      <p class="muted">Tekan kotaknya, siapa tahu ada senyum kecil yang ikut terbuka.</p>
+      <button class="gift-box" id="giftBtn" aria-label="Buka kotak hadiah">
+        <span class="gift-lid"></span><span class="gift-bow">♡</span><span class="gift-ribbon"></span><span class="gift-body"></span>
+      </button>
+      <p class="gift-message hidden" id="giftMessage">Untuk semua hal baik yang menunggumu di depan. Semoga tahun ini lebih lembut dan membahagiakan. 🌸</p>
+    </section>
+
+    <section class="gallery card hidden" id="gallerySection">
+      <p class="eyebrow">LITTLE MEMORIES</p>
+      <h2>Potongan kenangan</h2>
+      <p class="muted">Ganti foto contoh ini dengan foto kenangan kalian. Kalau belum ingin menambahkan foto, bagian ini boleh dibiarkan apa adanya.</p>
+      <div class="photo-grid">
+        <figure><img src="images/foto-1.jpg" alt="Foto kenangan pertama" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">🌷<small>Foto 1</small></span><figcaption>Kenangan yang pernah berarti</figcaption></figure>
+        <figure><img src="images/foto-2.jpg" alt="Foto kenangan kedua" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">🌸<small>Foto 2</small></span><figcaption>Momen yang tersimpan</figcaption></figure>
+        <figure><img src="images/foto-3.jpg" alt="Foto kenangan ketiga" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">🦋<small>Foto 3</small></span><figcaption>Bagian kecil dari cerita</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="music card hidden" id="musicSection">
+      <p class="eyebrow">A SOFT BACKGROUND</p>
+      <h2>Putar musik 🎵</h2>
+      <p class="muted">Tambahkan file musik milikmu ke folder <code>music</code>, lalu beri nama <code>lagu.mp3</code>.</p>
+      <audio id="birthdayAudio" src="music/lagu.mp3" loop preload="none"></audio>
+      <button class="music-btn" id="musicBtn">▶ Putar musik</button>
+      <p class="music-note" id="musicNote">Musik hanya akan diputar setelah tombol ditekan.</p>
+    </section>
+
+    <footer class="footer hidden" id="footerSection">
+      <div>♡</div>
+      <p>Selamat ulang tahun, Iwa.</p>
+      <small>Semoga bahagia selalu, ke mana pun langkahmu menuju.</small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
